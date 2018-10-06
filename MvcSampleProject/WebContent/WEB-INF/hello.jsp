@@ -6,10 +6,15 @@
    </head>
    
    <body>
+   <div align="center">
    <font color="red">
       <h2>${message}</h2>
    </font>
-   <c:url value="/register-form" var="url"/>
-   <a href="${url}">Registration form</a>
+   		<c:url value="/" var="url"/>
+   		<h3>
+   			<a href="${url}register-form">Registration form</a>
+   			<a href="${url}search-page">Search Student</a>
+   		</h3>
+   </div>
    </body>
 </html>
