@@ -55,7 +55,7 @@ public class RegistrationController {
 			Connection connection = null;
 			String sql = "INSERT INTO STUDENT (firstName, lastName, email) VALUES (?, ?, ?)";
 			try {
-				connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/myprograms","root", "Sreedhar@3");
+				connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/myprograms","root", "password");
 				PreparedStatement ps = (PreparedStatement) connection.prepareStatement(sql);
 				ps.setString(1, registrationForm.getFirstName());
 				ps.setString(2, registrationForm.getLastName());
